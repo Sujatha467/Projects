@@ -44,3 +44,28 @@ const scrollRevealOption = {
         delay: 7000,
     });
     
+
+
+
+ // Select all buttons with the class "btn" in the menu section
+const cartButtons = document.querySelectorAll('.menu .btn');
+
+// Add a click event listener to each button
+cartButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    
+    if (button.textContent === "Add to Cart") {
+      button.textContent = "Added to Cart";
+
+      
+      button.style.backgroundColor = ""; 
+      button.style.color = "";
+    } else {
+      button.textContent = "Add to Cart";
+
+     
+      button.style.backgroundColor = ""; 
+      button.style.color = "";
+    }
+  });
+});
